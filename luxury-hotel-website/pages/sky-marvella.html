@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sky Marvella Rooftop Terrace at Aslam's Luxury Hotel. 320 sq.m open-air venue offering panoramic skyline views for cocktail receptions."
+    />
+    <title>Sky Marvella | Rooftop Terrace | Aslam's Luxury Hotel</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/sections.css" />
+    <link rel="stylesheet" href="../css/cards.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header site-header--transparent" id="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a class="site-header__logo" href="../index.html" aria-label="Aslam's Luxury Hotel — Home">
+          <span class="site-header__logo-name">Aslam's</span>
+          <span class="site-header__logo-tag">Luxury Hotel</span>
+        </a>
+
+        <nav class="site-header__nav" aria-label="Primary navigation">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item site-header__nav-item--has-dropdown">
+              <a class="site-header__nav-link " href="rooms.html">Rooms</a>
+              <ul class="site-header__dropdown" aria-label="Room types">
+                <li><a class="site-header__dropdown-link" href="executive-room.html">Executive Room</a></li>
+                <li><a class="site-header__dropdown-link" href="club-room.html">Club Room</a></li>
+                <li><a class="site-header__dropdown-link" href="executive-suite.html">Executive Suite</a></li>
+                <li><a class="site-header__dropdown-link" href="presidential-suite.html">Presidential Suite</a></li>
+              </ul>
+            </li>
+            <li class="site-header__nav-item site-header__nav-item--has-dropdown">
+              <a class="site-header__nav-link " href="dining.html">Dining</a>
+              <ul class="site-header__dropdown" aria-label="Restaurants">
+                <li><a class="site-header__dropdown-link" href="wild-fork.html">The Wild Fork</a></li>
+                <li><a class="site-header__dropdown-link" href="via-milano.html">Via Milano</a></li>
+                <li><a class="site-header__dropdown-link" href="celestial-lounge.html">Celestial Lounge</a></li>
+                <li><a class="site-header__dropdown-link" href="l-amande.html">L'Amande Patisserie</a></li>
+                <li><a class="site-header__dropdown-link" href="saffron-bistro.html">Saffron Fine Dining</a></li>
+              </ul>
+            </li>
+            <li class="site-header__nav-item site-header__nav-item--has-dropdown">
+              <a class="site-header__nav-link site-header__nav-link--active" href="banquets.html">Banquets</a>
+              <ul class="site-header__dropdown" aria-label="Event venues">
+                <li><a class="site-header__dropdown-link" href="leroi.html">LeRoi</a></li>
+                <li><a class="site-header__dropdown-link" href="colosseum.html">Colosseum</a></li>
+                <li><a class="site-header__dropdown-link" href="sky-marvella.html">Sky Marvella</a></li>
+                <li><a class="site-header__dropdown-link" href="aurum.html">Aurum</a></li>
+                <li><a class="site-header__dropdown-link" href="vista.html">Vista</a></li>
+                <li><a class="site-header__dropdown-link" href="boardroom.html">Boardroom</a></li>
+              </ul>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link " href="offers.html">Offers</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link " href="facilities.html">Facilities</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link " href="gallery.html">Gallery</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link " href="location.html">Location</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link " href="contact.html">Contact</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link " href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <button type="button" class="btn btn--primary btn--header" id="header-book-btn" aria-label="Book your stay" data-modal-open="booking-confirm-modal">
+            Book Now
+          </button>
+        </div>
+
+        <button
+          type="button"
+          class="site-header__menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="site-header__menu-bar"></span>
+          <span class="site-header__menu-bar"></span>
+          <span class="site-header__menu-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <div class="mobile-menu__backdrop" tabindex="-1"></div>
+      <div class="mobile-menu__panel">
+        <div class="mobile-menu__header">
+          <a class="site-header__logo" href="../index.html">
+            <span class="site-header__logo-name">Aslam's Luxury Hotel</span>
+          </a>
+          <button type="button" class="mobile-menu__close" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="mobile-menu__nav" aria-label="Mobile primary navigation">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item--has-sub">
+              <div class="mobile-menu__link-group">
+                <a class="mobile-menu__link" href="rooms.html">Rooms</a>
+                <button type="button" class="mobile-menu__sub-toggle" aria-label="Toggle Rooms sub-menu"><i class="bx bx-chevron-down"></i></button>
+              </div>
+              <ul class="mobile-menu__sublist">
+                <li><a class="mobile-menu__sublink" href="executive-room.html">Executive Room</a></li>
+                <li><a class="mobile-menu__sublink" href="club-room.html">Club Room</a></li>
+                <li><a class="mobile-menu__sublink" href="executive-suite.html">Executive Suite</a></li>
+                <li><a class="mobile-menu__sublink" href="presidential-suite.html">Presidential Suite</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item--has-sub">
+              <div class="mobile-menu__link-group">
+                <a class="mobile-menu__link" href="dining.html">Dining</a>
+                <button type="button" class="mobile-menu__sub-toggle" aria-label="Toggle Dining sub-menu"><i class="bx bx-chevron-down"></i></button>
+              </div>
+              <ul class="mobile-menu__sublist">
+                <li><a class="mobile-menu__sublink" href="wild-fork.html">The Wild Fork</a></li>
+                <li><a class="mobile-menu__sublink" href="via-milano.html">Via Milano</a></li>
+                <li><a class="mobile-menu__sublink" href="celestial-lounge.html">Celestial Lounge</a></li>
+                <li><a class="mobile-menu__sublink" href="l-amande.html">L'Amande Patisserie</a></li>
+                <li><a class="mobile-menu__sublink" href="saffron-bistro.html">Saffron Fine Dining</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item--has-sub">
+              <div class="mobile-menu__link-group">
+                <a class="mobile-menu__link" href="banquets.html">Banquets</a>
+                <button type="button" class="mobile-menu__sub-toggle" aria-label="Toggle Banquets sub-menu"><i class="bx bx-chevron-down"></i></button>
+              </div>
+              <ul class="mobile-menu__sublist">
+                <li><a class="mobile-menu__sublink" href="leroi.html">LeRoi</a></li>
+                <li><a class="mobile-menu__sublink" href="colosseum.html">Colosseum</a></li>
+                <li><a class="mobile-menu__sublink" href="sky-marvella.html">Sky Marvella</a></li>
+                <li><a class="mobile-menu__sublink" href="aurum.html">Aurum</a></li>
+                <li><a class="mobile-menu__sublink" href="vista.html">Vista</a></li>
+                <li><a class="mobile-menu__sublink" href="boardroom.html">Boardroom</a></li>
+              </ul>
+            </li>
+            <li><a class="mobile-menu__link" href="offers.html">Offers</a></li>
+            <li><a class="mobile-menu__link" href="facilities.html">Facilities</a></li>
+            <li><a class="mobile-menu__link" href="gallery.html">Gallery</a></li>
+            <li><a class="mobile-menu__link" href="location.html">Location</a></li>
+            <li><a class="mobile-menu__link" href="contact.html">Contact</a></li>
+            <li><a class="mobile-menu__link" href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__footer">
+          <button type="button" class="btn btn--primary" data-modal-open="booking-confirm-modal">Book Your Stay</button>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <section class="page-hero page-hero--bottom" style="background-image: linear-gradient(rgba(24, 22, 20, 0.5), rgba(24, 22, 20, 0.7)), url('../assets/images/banquets/sky-marvella.jpg');">
+        <div class="container">
+          <span class="section__eyebrow" style="color: var(--gold-light);">Rooftop Terrace</span>
+          <h1 class="section__title" style="color: var(--white);">Sky Marvella</h1>
+          <p class="section__intro" style="color: rgba(255, 255, 255, 0.9);">
+            320 Sq. M &bull; Max Capacity: 200 Guests &bull; 360-Degree Panoramic Horizon
+          </p>
+        </div>
+      </section>
+
+      <!-- BREADCRUMB BAR -->
+      <div class="page-breadcrumb-bar">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a><i class="bx bx-chevron-right"></i><a href="banquets.html">Banquets</a><i class="bx bx-chevron-right"></i><span>Sky Marvella</span>
+        </nav>
+      </div>
+
+      <section class="section section--white" style="padding-block: 40px; border-bottom: 1px solid var(--border);">
+        <div class="container">
+          <div class="stats-grid" style="gap: 20px;">
+            <div>
+              <span class="stat-item__label">Total Area</span>
+              <strong style="display: block; font-family: var(--font-serif); font-size: 1.5rem; color: var(--charcoal);">320 Sq. M</strong>
+            </div>
+            <div>
+              <span class="stat-item__label">Max Capacity</span>
+              <strong style="display: block; font-family: var(--font-serif); font-size: 1.5rem; color: var(--charcoal);">200 Guests</strong>
+            </div>
+            <div>
+              <span class="stat-item__label">Setting</span>
+              <strong style="display: block; font-family: var(--font-serif); font-size: 1.5rem; color: var(--charcoal);">Open-Air Rooftop</strong>
+            </div>
+            <div>
+              <span class="stat-item__label">Ideal For</span>
+              <strong style="display: block; font-family: var(--font-serif); font-size: 1.5rem; color: var(--charcoal);">Cocktail Receptions</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cream">
+        <div class="container">
+          <div class="story-block">
+            <div class="story-block__media image-reveal">
+              <img src="../assets/images/banquets/sky-marvella.jpg" alt="Sky Marvella Rooftop View" loading="lazy" width="700" height="500" />
+            </div>
+            <div class="story-block__content reveal">
+              <span class="section__eyebrow">Starry Skyline Elegance</span>
+              <h2 class="section__title">Unrivalled Open-Air Experience</h2>
+              <p class="story-block__text">
+                Situated at the highest point of Aslam's Luxury Hotel, <strong>Sky Marvella</strong> is a premier open-air rooftop venue framed by infinity pool reflections, fire pits, and ambient lighting. Perfect for sunset cocktail parties and starry evening celebrations.
+              </p>
+              <button type="button" class="btn btn--primary" data-modal-open="booking-confirm-modal">Enquire About Sky Marvella</button>
+            </div>
+          </div>
+
+          <!-- SECOND FEATURE (RIGHT IMAGE / LEFT TEXT) -->
+          <div class="story-block story-block--reverse" style="margin-top: 80px;">
+            <div class="story-block__media image-reveal">
+              <img src="../assets/images/hero/hero-02.jpg" alt="Sky Marvella Night Ambiance" loading="lazy" width="700" height="500" />
+            </div>
+            <div class="story-block__content reveal">
+              <span class="section__eyebrow">Rooftop Catering &amp; Bar</span>
+              <h2 class="section__title">Custom Bar Stations &amp; Gourmet Live Stations</h2>
+              <p class="story-block__text">
+                Elevate your reception with live interactive culinary stations, artisanal wood-fired skewers, and dedicated flair mixologists serving signature craft cocktails under the stars.
+              </p>
+              <ul class="feature-block__list">
+                <li class="feature-block__item"><i class="bx bx-check-circle"></i> Glass-Encased Climate Pavilion Option</li>
+                <li class="feature-block__item"><i class="bx bx-check-circle"></i> Integrated Outdoor Ambient Sound &amp; DJ Booth</li>
+                <li class="feature-block__item"><i class="bx bx-check-circle"></i> VIP Elevator &amp; Private Valet Direct Service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <a class="site-footer__logo" href="../index.html">
+              <span class="site-footer__logo-name">Aslam's Luxury Hotel</span>
+              <span class="site-footer__logo-tag">Luxury Collection</span>
+            </a>
+            <p class="site-footer__desc">
+              An authentic five-star destination where timeless architectural elegance, warm hospitality, and contemporary comfort meet in the heart of the city.
+            </p>
+          </div>
+
+          <div class="site-footer__column">
+            <h3 class="site-footer__column-title">Explore</h3>
+            <ul class="site-footer__links">
+              <li><a class="site-footer__link" href="rooms.html">Rooms</a></li>
+              <li><a class="site-footer__link" href="dining.html">Dining</a></li>
+              <li><a class="site-footer__link" href="banquets.html">Events</a></li>
+              <li><a class="site-footer__link" href="offers.html">Offers</a></li>
+              <li><a class="site-footer__link" href="facilities.html">Facilities</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__column">
+            <h3 class="site-footer__column-title">Quick Links</h3>
+            <ul class="site-footer__links">
+              <li><a class="site-footer__link" href="gallery.html">Gallery</a></li>
+              <li><a class="site-footer__link" href="location.html">Location</a></li>
+              <li><a class="site-footer__link" href="contact.html">Contact</a></li>
+              <li><a class="site-footer__link" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__column">
+            <h3 class="site-footer__column-title">Contact</h3>
+            <address class="site-footer__contact">
+              <p class="site-footer__contact-item">
+                42 Meridian Boulevard<br />
+                Riverside District, Metro City 400001
+              </p>
+              <p class="site-footer__contact-item">
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </p>
+              <p class="site-footer__contact-item">
+                <a href="mailto:reservations@aslamsluxuryhotel.com">reservations@aslamsluxuryhotel.com</a>
+              </p>
+            </address>
+            <h3 class="site-footer__column-title site-footer__column-title--spaced">Social</h3>
+            <div class="site-footer__social">
+              <a class="site-footer__social-link" href="#" aria-label="Instagram">IG</a>
+              <a class="site-footer__social-link" href="#" aria-label="Facebook">FB</a>
+              <a class="site-footer__social-link" href="#" aria-label="YouTube">YT</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p>&copy; <span id="footer-year">2026</span> Aslam's Luxury Hotel. All rights reserved.</p>
+          <nav class="site-footer__legal" aria-label="Legal">
+            <a class="site-footer__legal-link" href="#">Privacy Policy</a>
+            <a class="site-footer__legal-link" href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS STACK (Icon-only: Book Stay, Concierge, Back to Top) -->
+    <div class="floating-btn-stack" id="floating-btn-stack">
+      <button type="button" class="floating-btn" data-modal-open="booking-confirm-modal" aria-label="Book Stay" title="Book Stay">
+        <i class="bx bx-calendar-check" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="floating-btn concierge-toggle" aria-label="Virtual Concierge" title="Virtual Concierge">
+        <i class="bx bx-support" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="floating-btn back-to-top" id="back-to-top" aria-label="Back to Top" title="Back to Top">
+        <i class="bx bx-chevron-up" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- CONCIERGE CHAT PANEL -->
+    <div class="concierge-panel" id="concierge-panel" aria-hidden="true" role="dialog" aria-label="Concierge Chat Panel">
+      <div class="concierge-panel__header">
+        <div>
+          <span class="concierge-panel__title">Aslam's Virtual Host</span>
+          <span class="concierge-panel__subtitle">24/7 Bespoke Guest Concierge</span>
+        </div>
+        <button type="button" class="concierge-panel__close" aria-label="Close Concierge Panel">&times;</button>
+      </div>
+
+      <div class="concierge-panel__body">
+        <div class="concierge-msg concierge-msg--bot">
+          <div class="concierge-msg__bubble">
+            Welcome to <strong>Aslam's Luxury Hotel</strong>. How may I assist your stay today? Select a topic or type your question below.
+            <div class="concierge-chips">
+              <button type="button" class="concierge-chip" data-query="rooms">Rooms</button>
+              <button type="button" class="concierge-chip" data-query="dining">Dining</button>
+              <button type="button" class="concierge-chip" data-query="events">Events</button>
+              <button type="button" class="concierge-chip" data-query="spa">Spa</button>
+              <button type="button" class="concierge-chip" data-query="location">Location</button>
+              <button type="button" class="concierge-chip" data-query="contact">Contact</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="concierge-panel__form">
+        <input type="text" class="concierge-panel__input" placeholder="Type a message or question..." aria-label="Type message to concierge" required />
+        <button type="submit" class="btn btn--primary btn--compact" aria-label="Send message">Send</button>
+      </form>
+    </div>
+
+    <div class="modal" id="booking-confirm-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal__backdrop" tabindex="-1"></div>
+      <div class="modal__dialog">
+        <button type="button" class="modal__close" data-modal-close aria-label="Close dialog">&times;</button>
+        <p class="modal__eyebrow">Venue Enquiry</p>
+        <h2 class="modal__title">Sky Marvella Booking</h2>
+        <p class="modal__message">Your request has been received by Aslam's Luxury Hotel event management.</p>
+        <div class="modal__summary" id="booking-summary"></div>
+        <div class="modal__actions">
+          <button type="button" class="btn btn--primary" data-modal-close>Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/animations.js"></script>
+  </body>
+</html>

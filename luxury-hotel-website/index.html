@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Aslam's Luxury Hotel — a five-star luxury hotel offering refined rooms, fine dining, spa wellness, and bespoke event venues." />
+  <title>Aslam's Luxury Hotel | 5-Star Luxury Retreat</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header site-header--transparent" id="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html" aria-label="Aslam's Luxury Hotel — Home">
+        <span class="site-header__logo-name">Aslam</span>
+        <span class="site-header__logo-tag">Luxury Hotel</span>
+      </a>
+
+      <nav class="site-header__nav" aria-label="Primary navigation">
+        <ul class="site-header__nav-list">
+          <li class="site-header__nav-item site-header__nav-item--has-dropdown">
+            <a class="site-header__nav-link" href="pages/rooms.html">Rooms</a>
+            <ul class="site-header__dropdown" aria-label="Room types">
+              <li><a class="site-header__dropdown-link" href="pages/executive-room.html">Executive Room</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/club-room.html">Club Room</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/executive-suite.html">Executive Suite</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/presidential-suite.html">Presidential Suite</a></li>
+            </ul>
+          </li>
+          <li class="site-header__nav-item site-header__nav-item--has-dropdown">
+            <a class="site-header__nav-link" href="pages/dining.html">Dining</a>
+            <ul class="site-header__dropdown" aria-label="Restaurants">
+              <li><a class="site-header__dropdown-link" href="pages/wild-fork.html">The Wild Fork</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/via-milano.html">Via Milano</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/celestial-lounge.html">Celestial Lounge</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/l-amande.html">L'Amande Patisserie</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/saffron-bistro.html">Saffron Fine Dining</a></li>
+            </ul>
+          </li>
+          <li class="site-header__nav-item site-header__nav-item--has-dropdown">
+            <a class="site-header__nav-link" href="pages/banquets.html">Banquets</a>
+            <ul class="site-header__dropdown" aria-label="Event venues">
+              <li><a class="site-header__dropdown-link" href="pages/leroi.html">LeRoi</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/colosseum.html">Colosseum</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/sky-marvella.html">Sky Marvella</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/aurum.html">Aurum</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/vista.html">Vista</a></li>
+              <li><a class="site-header__dropdown-link" href="pages/boardroom.html">Boardroom</a></li>
+            </ul>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="pages/offers.html">Offers</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="pages/facilities.html">Facilities</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="pages/gallery.html">Gallery</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="pages/location.html">Location</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="pages/contact.html">Contact</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="pages/faq.html">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button type="button" class="btn btn--primary btn--header" id="header-book-btn" aria-label="Book your stay"
+          data-modal-open="booking-confirm-modal">
+          Book Now
+        </button>
+      </div>
+
+      <button type="button" class="site-header__menu-toggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span class="site-header__menu-bar"></span>
+        <span class="site-header__menu-bar"></span>
+        <span class="site-header__menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Mobile navigation">
+    <div class="mobile-menu__backdrop" tabindex="-1"></div>
+    <div class="mobile-menu__panel">
+      <div class="mobile-menu__header">
+        <a class="site-header__logo" href="index.html">
+          <span class="site-header__logo-name">Aslam's <br> Luxury Hotel</span>
+        </a>
+        <button type="button" class="mobile-menu__close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-menu__nav" aria-label="Mobile primary navigation">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item--has-sub">
+            <div class="mobile-menu__link-group">
+              <a class="mobile-menu__link" href="pages/rooms.html">Rooms</a>
+              <button type="button" class="mobile-menu__sub-toggle" aria-label="Toggle Rooms sub-menu"><i
+                  class="bx bx-chevron-down"></i></button>
+            </div>
+            <ul class="mobile-menu__sublist">
+              <li><a class="mobile-menu__sublink" href="pages/executive-room.html">Executive Room</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/club-room.html">Club Room</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/executive-suite.html">Executive Suite</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/presidential-suite.html">Presidential Suite</a></li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item--has-sub">
+            <div class="mobile-menu__link-group">
+              <a class="mobile-menu__link" href="pages/dining.html">Dining</a>
+              <button type="button" class="mobile-menu__sub-toggle" aria-label="Toggle Dining sub-menu"><i
+                  class="bx bx-chevron-down"></i></button>
+            </div>
+            <ul class="mobile-menu__sublist">
+              <li><a class="mobile-menu__sublink" href="pages/wild-fork.html">The Wild Fork</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/via-milano.html">Via Milano</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/celestial-lounge.html">Celestial Lounge</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/l-amande.html">L'Amande Patisserie</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/saffron-bistro.html">Saffron Fine Dining</a></li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item--has-sub">
+            <div class="mobile-menu__link-group">
+              <a class="mobile-menu__link" href="pages/banquets.html">Banquets</a>
+              <button type="button" class="mobile-menu__sub-toggle" aria-label="Toggle Banquets sub-menu"><i
+                  class="bx bx-chevron-down"></i></button>
+            </div>
+            <ul class="mobile-menu__sublist">
+              <li><a class="mobile-menu__sublink" href="pages/leroi.html">LeRoi</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/colosseum.html">Colosseum</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/sky-marvella.html">Sky Marvella</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/aurum.html">Aurum</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/vista.html">Vista</a></li>
+              <li><a class="mobile-menu__sublink" href="pages/boardroom.html">Boardroom</a></li>
+            </ul>
+          </li>
+          <li><a class="mobile-menu__link" href="pages/offers.html">Offers</a></li>
+          <li><a class="mobile-menu__link" href="pages/facilities.html">Facilities</a></li>
+          <li><a class="mobile-menu__link" href="pages/gallery.html">Gallery</a></li>
+          <li><a class="mobile-menu__link" href="pages/location.html">Location</a></li>
+          <li><a class="mobile-menu__link" href="pages/contact.html">Contact</a></li>
+          <li><a class="mobile-menu__link" href="pages/faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__footer">
+        <button type="button" class="btn btn--primary" data-modal-open="booking-confirm-modal">Book Your Stay</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero" aria-roledescription="carousel" aria-label="Featured hotel highlights">
+      <div class="hero__viewport">
+        <div class="hero__slides">
+          <article class="hero__slide is-active" aria-label="Slide 1 of 3">
+            <div class="hero__media">
+              <img class="hero__image" src="assets/images/hero/hero-01.jpg"
+                alt="Grand lobby of Aslam's Luxury Hotel with gold accents and marble design" width="1920" height="1080"
+                fetchpriority="high" />
+            </div>
+            <div class="hero__overlay" aria-hidden="true"></div>
+            <div class="container hero__content">
+              <div class="hero__copy">
+                <p class="hero__eyebrow">Aslam's Luxury Hotel</p>
+                <h1 class="hero__title">Sanctuary Elegance</h1>
+                <p class="hero__subtitle">Where extraordinary moments begin</p>
+                <p class="hero__text">
+                  Experience world-class hospitality, bespoke architecture, and five-star luxury tailored for
+                  unforgettable stays.
+                </p>
+                <div class="hero__actions">
+                  <a class="btn btn--primary" href="#rooms">Book Your Stay</a>
+                  <a class="btn btn--outline" href="#rooms">Explore Accommodations</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero__slide" aria-label="Slide 2 of 3" aria-hidden="true">
+            <div class="hero__media">
+              <img class="hero__image" src="assets/images/hero/hero-02.jpg"
+                alt="Serene infinity rooftop pool with panoramic skyline views" width="1920" height="1080"
+                loading="lazy" />
+            </div>
+            <div class="hero__overlay" aria-hidden="true"></div>
+            <div class="container hero__content">
+              <div class="hero__copy">
+                <p class="hero__eyebrow">Elevated Retreat</p>
+                <h2 class="hero__title">Rooftop Serenity</h2>
+                <p class="hero__subtitle">Where skyline meets absolute stillness</p>
+                <p class="hero__text">
+                  Unwind beside our ambient infinity pool, framed by dramatic skyline views and bespoke lounge service.
+                </p>
+                <div class="hero__actions">
+                  <a class="btn btn--primary" href="pages/facilities.html">View Facilities</a>
+                  <a class="btn btn--outline" href="pages/gallery.html">Explore Gallery</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero__slide" aria-label="Slide 3 of 3" aria-hidden="true">
+            <div class="hero__media">
+              <img class="hero__image" src="assets/images/hero/hero-03.jpg"
+                alt="Fine dining table setting at Aslam's Luxury Hotel" width="1920" height="1080" loading="lazy" />
+            </div>
+            <div class="hero__overlay" aria-hidden="true"></div>
+            <div class="container hero__content">
+              <div class="hero__copy">
+                <p class="hero__eyebrow">Culinary Mastercraft</p>
+                <h2 class="hero__title">Exquisite Fine Dining</h2>
+                <p class="hero__subtitle">Flavours crafted for connoisseurs</p>
+                <p class="hero__text">
+                  Indulge in Michelin-grade recipes, signature wine pairings, and vibrant atmospheres across two
+                  flagship restaurants.
+                </p>
+                <div class="hero__actions">
+                  <a class="btn btn--primary" href="pages/dining.html">Discover Dining</a>
+                  <a class="btn btn--outline" href="pages/wild-fork.html">The Wild Fork</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="container hero__controls-container">
+          <div class="hero__controls" aria-label="Hero slideshow controls">
+            <button type="button" class="hero__arrow hero__arrow--prev" aria-label="Previous slide">
+              <span class="hero__arrow-icon" aria-hidden="true">&#8592;</span>
+            </button>
+            <p class="hero__counter" aria-live="polite">
+              <span class="hero__counter-current">01</span>
+              <span class="hero__counter-sep" aria-hidden="true">/</span>
+              <span class="hero__counter-total">03</span>
+            </p>
+            <button type="button" class="hero__arrow hero__arrow--next" aria-label="Next slide">
+              <span class="hero__arrow-icon" aria-hidden="true">&#8594;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__booking-wrap">
+        <aside class="booking-bar" id="booking-bar" aria-labelledby="booking-bar-title">
+          <h2 class="booking-bar__title" id="booking-bar-title">Plan Your Stay</h2>
+          <form class="booking-bar__form" id="hero-booking-form" novalidate>
+            <div class="booking-bar__field">
+              <label class="booking-bar__label" for="booking-checkin">Check-in</label>
+              <input class="booking-bar__input" type="date" id="booking-checkin" name="checkin" required
+                autocomplete="off" />
+              <span class="booking-bar__error" data-error-for="booking-checkin" role="alert"></span>
+            </div>
+            <div class="booking-bar__field">
+              <label class="booking-bar__label" for="booking-checkout">Check-out</label>
+              <input class="booking-bar__input" type="date" id="booking-checkout" name="checkout" required
+                autocomplete="off" />
+              <span class="booking-bar__error" data-error-for="booking-checkout" role="alert"></span>
+            </div>
+            <div class="booking-bar__field">
+              <label class="booking-bar__label" for="booking-adults">Adults</label>
+              <select class="booking-bar__select" id="booking-adults" name="adults" required>
+                <option value="">Select</option>
+                <option value="1">1 Adult</option>
+                <option value="2" selected>2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+                <option value="5">5 Adults</option>
+              </select>
+              <span class="booking-bar__error" data-error-for="booking-adults" role="alert"></span>
+            </div>
+            <div class="booking-bar__field">
+              <label class="booking-bar__label" for="booking-children">Children</label>
+              <select class="booking-bar__select" id="booking-children" name="children" required>
+                <option value="0" selected>0 Children</option>
+                <option value="1">1 Child</option>
+                <option value="2">2 Children</option>
+                <option value="3">3 Children</option>
+              </select>
+              <span class="booking-bar__error" data-error-for="booking-children" role="alert"></span>
+            </div>
+            <div class="booking-bar__field">
+              <label class="booking-bar__label" for="booking-rooms">Rooms</label>
+              <select class="booking-bar__select" id="booking-rooms" name="rooms" required>
+                <option value="">Select</option>
+                <option value="1" selected>1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+                <option value="4">4 Rooms</option>
+              </select>
+              <span class="booking-bar__error" data-error-for="booking-rooms" role="alert"></span>
+            </div>
+            <div class="booking-bar__field booking-bar__submit">
+              <span class="booking-bar__label sr-only">Search availability</span>
+              <button type="submit" class="btn btn--primary">Check Availability</button>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 1. HOTEL STATISTICS -->
+    <section class="section section--white" id="stats" aria-labelledby="stats-heading">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">At a Glance</span>
+          <h2 class="section__title" id="stats-heading">Hotel Statistics</h2>
+          <span class="decor-line" aria-hidden="true"></span>
+        </header>
+
+        <div class="stats-grid" data-stats>
+          <div class="stat-item reveal">
+            <span class="stat-item__value" data-count="102">0</span>
+            <span class="stat-item__label">Luxurious Rooms &amp; Suites</span>
+          </div>
+          <div class="stat-item reveal" data-reveal-delay="100">
+            <span class="stat-item__value" data-count="2">0</span>
+            <span class="stat-item__label">Fine Dining Restaurants</span>
+          </div>
+          <div class="stat-item reveal" data-reveal-delay="200">
+            <span class="stat-item__value" data-count="6">0</span>
+            <span class="stat-item__label">Bespoke Event Venues</span>
+          </div>
+          <div class="stat-item reveal" data-reveal-delay="300">
+            <span class="stat-item__value" data-count="5" data-suffix="★">0</span>
+            <span class="stat-item__label">Luxury Hospitality</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ROOMS SECTION -->
+    <section class="section section--cream" id="rooms" aria-labelledby="rooms-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Accommodations</span>
+          <h2 class="section__title" id="rooms-heading">Rooms &amp; Suites</h2>
+          <p class="section__intro">
+            Thoughtfully appointed sanctuary spaces designed for restful quietude, intuitive functionality, and
+            contemporary luxury.
+          </p>
+        </header>
+
+        <div class="card-grid card-grid--4">
+          <!-- Room 1 -->
+          <article class="room-card reveal">
+            <div class="room-card__media">
+              <img src="assets/images/rooms/executive-room.jpg"
+                alt="Executive Room with modern king bed and warm aesthetic" loading="lazy" width="600" height="450" />
+            </div>
+            <div class="room-card__body">
+              <h3 class="room-card__name">Executive Room</h3>
+              <div class="room-card__meta">
+                <span class="room-card__meta-item">38 Sq. M</span>
+                <span>&bull;</span>
+                <span class="room-card__meta-item">King Bed</span>
+                <span>&bull;</span>
+                <span class="room-card__meta-item">2 Guests</span>
+              </div>
+              <p class="room-card__desc">
+                Sophisticated retreat featuring plush bedding, custom Italian walnut furniture, smart climate controls,
+                and high-speed workspace.
+              </p>
+              <div class="room-card__actions">
+                <a class="card-link" href="pages/executive-room.html">
+                  Explore Details <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <button type="button" class="btn btn--outline" data-modal-open="booking-confirm-modal">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Room 2 -->
+          <article class="room-card reveal" data-reveal-delay="100">
+            <div class="room-card__media">
+              <img src="assets/images/rooms/club-room.jpg" alt="Club Room with lounge seating and panoramic window view"
+                loading="lazy" width="600" height="450" />
+            </div>
+            <div class="room-card__body">
+              <h3 class="room-card__name">Club Room</h3>
+              <div class="room-card__meta">
+                <span class="room-card__meta-item">46 Sq. M</span>
+                <span>&bull;</span>
+                <span class="room-card__meta-item">King Bed</span>
+                <span>&bull;</span>
+                <span class="room-card__meta-item">2 Guests</span>
+              </div>
+              <p class="room-card__desc">
+                Elevated stay with privileged Executive Club Lounge access, complimentary evening cocktails, daily
+                gourmet breakfast, and airport shuttle.
+              </p>
+              <div class="room-card__actions">
+                <a class="card-link" href="pages/club-room.html">
+                  Explore Details <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <button type="button" class="btn btn--outline" data-modal-open="booking-confirm-modal">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Room 3 -->
+          <article class="room-card reveal" data-reveal-delay="200">
+            <div class="room-card__media">
+              <img src="assets/images/rooms/executive-suite.jpg"
+                alt="Executive Suite with separate living room and luxury bath" loading="lazy" width="600"
+                height="450" />
+            </div>
+            <div class="room-card__body">
+              <h3 class="room-card__name">Executive Suite</h3>
+              <div class="room-card__meta">
+                <span class="room-card__meta-item">68 Sq. M</span>
+                <span>&bull;</span>
+                <span class="room-card__meta-item">King Bed + Sofa</span>
+                <span>&bull;</span>
+                <span class="room-card__meta-item">3 Guests</span>
+              </div>
+              <p class="room-card__desc">
+                Expansive suite with distinct master bedroom, separate lounge, marble bath with deep soaking tub, and
+                floor-to-ceiling city horizon views.
+              </p>
+              <div class="room-card__actions">
+                <a class="card-link" href="pages/executive-suite.html">
+                  Explore Details <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <button type="button" class="btn btn--outline" data-modal-open="booking-confirm-modal">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Room 4 -->
+          <article class="room-card reveal" data-reveal-delay="300">
+            <div class="room-card__media">
+              <img src="assets/images/rooms/presidential-suite.jpg"
+                alt="Presidential Suite with opulent grand room and dining space" loading="lazy" width="600"
+                height="450" />
+            </div>
+            <div class="room-card__body">
+              <h3 class="room-card__name">Presidential Suite</h3>
+              <div class="room-card__meta">
+                <span class="room-card__meta-item">120 Sq. M</span>
+                <span>&bull;</span>
+                <span class="room-card__meta-item">King Bed + Dining</span>
+                <span>&bull;</span>
+                <span class="room-card__meta-item">4 Guests</span>
+              </div>
+              <p class="room-card__desc">
+                Our crown jewel offering grand living areas, private dining room, marble whirlpool spa bath, private
+                butler service, and VIP security controls.
+              </p>
+              <div class="room-card__actions">
+                <a class="card-link" href="pages/presidential-suite.html">
+                  Explore Details <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <button type="button" class="btn btn--outline" data-modal-open="booking-confirm-modal">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section__footer-cta reveal">
+          <a class="btn btn--outline-dark" href="pages/rooms.html">View All Accommodations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT / STORY -->
+    <section class="section section--beige" id="story" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="story-block">
+          <div class="story-block__media image-reveal">
+            <img src="assets/images/facilities/story.jpg"
+              alt="Architectural courtyard and warm lighting at Aslam's Luxury Hotel" loading="lazy" width="640"
+              height="800" />
+            <div class="story-block__media-frame" aria-hidden="true"></div>
+          </div>
+
+          <div class="story-block__content reveal">
+            <span class="section__eyebrow">Our Story</span>
+            <h2 class="section__title" id="story-heading">A Refined Hospitality Experience</h2>
+            <blockquote class="story-block__quote">
+              "True luxury lies in understated elegance, authentic warmth, and an unwavering commitment to quiet
+              perfection."
+            </blockquote>
+            <p class="story-block__text">
+              Established with a vision to redefine urban hospitality, <strong>Aslam's Luxury Hotel</strong> combines
+              timeless architectural grandeur with modern boutique sophistication. Located in the heart of the city's
+              prestigious cultural district, our hotel offers an intimate sanctuary away from the bustle.
+            </p>
+            <p class="story-block__text">
+              Every element of your stay has been carefully crafted by master artisans—from hand-selected linens to
+              bespoke culinary journeys and deeply personalized concierge care.
+            </p>
+            <a class="btn btn--primary" href="pages/contact.html">Discover Our Legacy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SPA / WELLNESS -->
+    <section class="section section--white" id="spa" aria-labelledby="spa-heading">
+      <div class="container">
+        <div class="spa-block">
+          <div class="spa-block__media image-reveal">
+            <img src="assets/images/spa/spa-main.jpg"
+              alt="Tranquil luxury spa room with ambient candle light and massage table" loading="lazy" width="700"
+              height="480" />
+          </div>
+
+          <div class="spa-block__content reveal">
+            <span class="section__eyebrow">Wellness &amp; Serenity</span>
+            <h2 class="section__title" id="spa-heading">Spa &amp; Rejuvenation Sanctuary</h2>
+            <p class="section__intro">
+              Step into a world of restorative quietude. Our holistic spa blends ancient thermal wellness with modern
+              therapeutic science.
+            </p>
+
+            <div class="spa-block__features">
+              <div class="spa-block__feature">Aromatherapy Rituals</div>
+              <div class="spa-block__feature">Hydrotherapy Suites</div>
+              <div class="spa-block__feature">Deep Tissue Massage</div>
+              <div class="spa-block__feature">Herbal Steam Sauna</div>
+            </div>
+
+            <a class="btn btn--gold" href="pages/facilities.html">Explore Wellness Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. DINING SECTION -->
+    <section class="section section--cream" id="dining" aria-labelledby="dining-heading">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">Culinary Artistry</span>
+          <h2 class="section__title" id="dining-heading">Fine Dining Experiences</h2>
+          <span class="decor-line" aria-hidden="true"></span>
+        </header>
+
+        <div class="card-grid card-grid--2">
+          <!-- Restaurant 1 -->
+          <article class="editorial-card reveal">
+            <div class="editorial-card__media">
+              <img src="assets/images/dining/wild-fork.jpg" alt="Modern fine dining plate presentation at The Wild Fork"
+                loading="lazy" width="700" height="500" />
+              <span class="editorial-card__index">01</span>
+            </div>
+            <div class="editorial-card__body">
+              <span class="editorial-card__tag">International Fine Dining</span>
+              <h3 class="editorial-card__title">The Wild Fork</h3>
+              <p class="editorial-card__subtitle">Wood-Fired Flavours &amp; Global Fusion</p>
+              <p class="editorial-card__desc">
+                An theatrical culinary theatre showcasing open wood-fired grills, dry-aged prime cuts, and international
+                gourmet recipes crafted with seasonal organic ingredients.
+              </p>
+              <div class="editorial-card__hours">
+                <strong>Hours:</strong> Daily 07:00 AM – 11:30 PM &bull; Smart Casual
+              </div>
+              <a class="card-link" href="pages/wild-fork.html">
+                Discover The Wild Fork <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Restaurant 2 -->
+          <article class="editorial-card editorial-card--reverse reveal" data-reveal-delay="100">
+            <div class="editorial-card__media">
+              <img src="assets/images/dining/via-milano.jpg"
+                alt="Elegant wine glasses and pasta table setting at Via Milano" loading="lazy" width="700"
+                height="500" />
+              <span class="editorial-card__index">02</span>
+            </div>
+            <div class="editorial-card__body">
+              <span class="editorial-card__tag">Italian Ristorante &amp; Wine Bar</span>
+              <h3 class="editorial-card__title">Via Milano</h3>
+              <p class="editorial-card__subtitle">Authentic Regional Traditions</p>
+              <p class="editorial-card__desc">
+                Honouring centuries of Italian heritage with hand-rolled pastas, rare white truffle pairings, and an
+                extensive wine cellar selected by our master sommelier.
+              </p>
+              <div class="editorial-card__hours">
+                <strong>Hours:</strong> Dinner 06:30 PM – 11:00 PM &bull; Elegant Attire
+              </div>
+              <a class="card-link" href="pages/via-milano.html">
+                Discover Via Milano <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BANQUETS SECTION -->
+    <section class="section section--beige" id="banquets" aria-labelledby="banquets-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Event Venues</span>
+          <h2 class="section__title" id="banquets-heading">Banquets &amp; Celebrations</h2>
+          <p class="section__intro">
+            Grand ballrooms, open-air rooftop terraces, and state-of-the-art executive boardrooms designed for memorable
+            occasions.
+          </p>
+        </header>
+
+        <div class="card-grid card-grid--3 card-grid--banquets">
+          <!-- Venue 1 -->
+          <article class="venue-card reveal">
+            <div class="venue-card__media">
+              <img src="assets/images/banquets/leroi.jpg" alt="Grand wedding banquet hall setup at LeRoi" loading="lazy"
+                width="600" height="375" />
+            </div>
+            <div class="venue-card__body">
+              <h3 class="venue-card__title">LeRoi Ballroom</h3>
+              <div class="venue-card__meta">650 Sq. M &bull; Up to 500 Guests</div>
+              <p class="venue-card__desc">
+                Opulent pillarless ballroom featuring hand-cut crystal chandeliers, high ceilings, and dedicated banquet
+                foyer.
+              </p>
+              <a class="card-link" href="pages/leroi.html">
+                Explore Venue <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Venue 2 -->
+          <article class="venue-card reveal" data-reveal-delay="100">
+            <div class="venue-card__media">
+              <img src="assets/images/banquets/colosseum.jpg" alt="Concert style corporate gala setup at Colosseum"
+                loading="lazy" width="600" height="375" />
+            </div>
+            <div class="venue-card__body">
+              <h3 class="venue-card__title">Colosseum</h3>
+              <div class="venue-card__meta">480 Sq. M &bull; Up to 350 Guests</div>
+              <p class="venue-card__desc">
+                Versatile hall engineered with advanced AV acoustics, stage lighting, and flexible theater
+                configuration.
+              </p>
+              <a class="card-link" href="pages/colosseum.html">
+                Explore Venue <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Venue 3 -->
+          <article class="venue-card reveal" data-reveal-delay="200">
+            <div class="venue-card__media">
+              <img src="assets/images/banquets/sky-marvella.jpg"
+                alt="Open air rooftop evening reception at Sky Marvella" loading="lazy" width="600" height="375" />
+            </div>
+            <div class="venue-card__body">
+              <h3 class="venue-card__title">Sky Marvella</h3>
+              <div class="venue-card__meta">320 Sq. M &bull; Up to 200 Guests</div>
+              <p class="venue-card__desc">
+                Breathtaking open-air rooftop terrace offering panoramic skyline views for starry cocktail celebrations.
+              </p>
+              <a class="card-link" href="pages/sky-marvella.html">
+                Explore Venue <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Venue 4 -->
+          <article class="venue-card reveal" data-reveal-delay="100">
+            <div class="venue-card__media">
+              <img src="assets/images/banquets/aurum.jpg" alt="Luxury gold detailed banquet setup at Aurum"
+                loading="lazy" width="600" height="375" />
+            </div>
+            <div class="venue-card__body">
+              <h3 class="venue-card__title">Aurum Suite</h3>
+              <div class="venue-card__meta">250 Sq. M &bull; Up to 150 Guests</div>
+              <p class="venue-card__desc">
+                Warm gold leaf accents, plush carpeted interior, and tailored lighting ideal for engagement functions
+                and private dinners.
+              </p>
+              <a class="card-link" href="pages/aurum.html">
+                Explore Venue <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Venue 5 -->
+          <article class="venue-card reveal" data-reveal-delay="200">
+            <div class="venue-card__media">
+              <img src="assets/images/banquets/vista.jpg" alt="Glasshouse pavilion banquet setting at Vista"
+                loading="lazy" width="600" height="375" />
+            </div>
+            <div class="venue-card__body">
+              <h3 class="venue-card__title">Vista Pavilion</h3>
+              <div class="venue-card__meta">180 Sq. M &bull; Up to 100 Guests</div>
+              <p class="venue-card__desc">
+                Sunlit glasshouse surrounded by manicured tropical gardens, providing an idyllic botanical backdrop.
+              </p>
+              <a class="card-link" href="pages/vista.html">
+                Explore Venue <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Venue 6 -->
+          <article class="venue-card reveal" data-reveal-delay="300">
+            <div class="venue-card__media">
+              <img src="assets/images/banquets/boardroom.jpg"
+                alt="Executive boardroom table with leather seating and video conferencing" loading="lazy" width="600"
+                height="375" />
+            </div>
+            <div class="venue-card__body">
+              <h3 class="venue-card__title">The Boardroom</h3>
+              <div class="venue-card__meta">85 Sq. M &bull; Up to 25 Guests</div>
+              <p class="venue-card__desc">
+                Polished mahogany conference table, executive leather seating, secure ultra-fast connectivity, and
+                secretarial support.
+              </p>
+              <a class="card-link" href="pages/boardroom.html">
+                Explore Venue <span class="card-link__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section__footer-cta reveal">
+          <a class="btn btn--outline-dark" href="pages/banquets.html">View All Event Venues</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. OFFERS SECTION -->
+    <section class="section section--white" id="offers" aria-labelledby="offers-heading">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">Exclusive Privileges</span>
+          <h2 class="section__title" id="offers-heading">Special Offers</h2>
+          <span class="decor-line" aria-hidden="true"></span>
+        </header>
+
+        <div class="card-grid card-grid--3">
+          <!-- Offer 1 -->
+          <article class="offer-card reveal">
+            <div class="offer-card__media">
+              <img src="assets/images/rooms/executive-suite.jpg" alt="Luxury suite bedroom with gold lighting"
+                loading="lazy" width="600" height="400" />
+            </div>
+            <div class="offer-card__body">
+              <span class="offer-card__category">Room Package</span>
+              <h3 class="offer-card__title">The Suite Serenity Experience</h3>
+              <p class="offer-card__desc">
+                Enjoy 25% savings on all Suite stays, complimentary daily champagne breakfast, and late check-out until
+                4:00 PM.
+              </p>
+              <a class="btn btn--outline" href="pages/offers.html">View Package Details</a>
+            </div>
+          </article>
+
+          <!-- Offer 2 -->
+          <article class="offer-card reveal" data-reveal-delay="100">
+            <div class="offer-card__media">
+              <img src="assets/images/dining/wild-fork.jpg" alt="Fine dining dish paired with glass of wine"
+                loading="lazy" width="600" height="400" />
+            </div>
+            <div class="offer-card__body">
+              <span class="offer-card__category">Dining Experience</span>
+              <h3 class="offer-card__title">Chef’s Signature Tasting Journey</h3>
+              <p class="offer-card__desc">
+                Indulge in a 5-course degustation menu at The Wild Fork paired with master sommelier wine selections.
+              </p>
+              <a class="btn btn--outline" href="pages/offers.html">View Package Details</a>
+            </div>
+          </article>
+
+          <!-- Offer 3 -->
+          <article class="offer-card reveal" data-reveal-delay="200">
+            <div class="offer-card__media">
+              <img src="assets/images/spa/spa-main.jpg" alt="Luxury spa oils and warm towel setting" loading="lazy"
+                width="600" height="400" />
+            </div>
+            <div class="offer-card__body">
+              <span class="offer-card__category">Wellness Escapes</span>
+              <h3 class="offer-card__title">Weekend Rejuvenation Retreat</h3>
+              <p class="offer-card__desc">
+                Includes a 90-minute holistic aromatherapy massage, thermal sauna access, and artisanal high tea for
+                two.
+              </p>
+              <a class="btn btn--outline" href="pages/offers.html">View Package Details</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section__footer-cta reveal">
+          <a class="btn btn--primary" href="pages/offers.html">Explore All Special Offers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. GALLERY PREVIEW -->
+    <section class="section section--cream" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">Visual Journey</span>
+          <h2 class="section__title" id="gallery-heading">Gallery Preview</h2>
+          <span class="decor-line" aria-hidden="true"></span>
+        </header>
+
+        <div class="gallery-preview">
+          <div class="gallery-preview__item gallery-preview__item--wide reveal">
+            <img src="assets/images/gallery/gallery-01.jpg" alt="Grand entrance lobby of Aslam's Luxury Hotel"
+              loading="lazy" width="800" height="600" />
+            <div class="gallery-preview__overlay">
+              <span class="gallery-preview__label">Grand Lobby</span>
+            </div>
+          </div>
+
+          <div class="gallery-preview__item reveal" data-reveal-delay="100">
+            <img src="assets/images/gallery/gallery-02.jpg" alt="Rooftop infinity pool during sunset" loading="lazy"
+              width="400" height="400" />
+            <div class="gallery-preview__overlay">
+              <span class="gallery-preview__label">Infinity Pool</span>
+            </div>
+          </div>
+
+          <div class="gallery-preview__item reveal" data-reveal-delay="200">
+            <img src="assets/images/gallery/gallery-03.jpg" alt="Presidential Suite bedroom layout" loading="lazy"
+              width="400" height="400" />
+            <div class="gallery-preview__overlay">
+              <span class="gallery-preview__label">Presidential Suite</span>
+            </div>
+          </div>
+
+          <div class="gallery-preview__item reveal" data-reveal-delay="100">
+            <img src="assets/images/gallery/gallery-04.jpg" alt="Via Milano wine cellar display" loading="lazy"
+              width="400" height="400" />
+            <div class="gallery-preview__overlay">
+              <span class="gallery-preview__label">Via Milano Cellar</span>
+            </div>
+          </div>
+
+          <div class="gallery-preview__item reveal" data-reveal-delay="200">
+            <img src="assets/images/gallery/gallery-05.jpg" alt="Atmospheric rooftop lounge lighting" loading="lazy"
+              width="400" height="400" />
+            <div class="gallery-preview__overlay">
+              <span class="gallery-preview__label">Sky Lounge</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__footer-cta reveal">
+          <a class="btn btn--gold" href="pages/gallery.html">Open Interactive Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FACILITIES SECTION -->
+    <section class="section section--beige" id="facilities" aria-labelledby="facilities-heading">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">Amenities</span>
+          <h2 class="section__title" id="facilities-heading">World-Class Facilities</h2>
+          <span class="decor-line" aria-hidden="true"></span>
+        </header>
+
+        <div class="card-grid card-grid--4">
+          <div class="facility-pill reveal">
+            <div class="facility-pill__icon" aria-hidden="true">&#9670;</div>
+            <h3 class="facility-pill__name">Infinity Pool</h3>
+          </div>
+          <div class="facility-pill reveal" data-reveal-delay="50">
+            <div class="facility-pill__icon" aria-hidden="true">&#9670;</div>
+            <h3 class="facility-pill__name">Luxury Spa</h3>
+          </div>
+          <div class="facility-pill reveal" data-reveal-delay="100">
+            <div class="facility-pill__icon" aria-hidden="true">&#9670;</div>
+            <h3 class="facility-pill__name">24/7 Fitness Center</h3>
+          </div>
+          <div class="facility-pill reveal" data-reveal-delay="150">
+            <div class="facility-pill__icon" aria-hidden="true">&#9670;</div>
+            <h3 class="facility-pill__name">Valet &amp; EV Charging</h3>
+          </div>
+          <div class="facility-pill reveal" data-reveal-delay="200">
+            <div class="facility-pill__icon" aria-hidden="true">&#9670;</div>
+            <h3 class="facility-pill__name">High-Speed Wi-Fi</h3>
+          </div>
+          <div class="facility-pill reveal" data-reveal-delay="250">
+            <div class="facility-pill__icon" aria-hidden="true">&#9670;</div>
+            <h3 class="facility-pill__name">Bespoke Concierge</h3>
+          </div>
+          <div class="facility-pill reveal" data-reveal-delay="300">
+            <div class="facility-pill__icon" aria-hidden="true">&#9670;</div>
+            <h3 class="facility-pill__name">24h Room Service</h3>
+          </div>
+          <div class="facility-pill reveal" data-reveal-delay="350">
+            <div class="facility-pill__icon" aria-hidden="true">&#9670;</div>
+            <h3 class="facility-pill__name">Business Center</h3>
+          </div>
+        </div>
+
+        <div class="section__footer-cta reveal">
+          <a class="btn btn--outline-dark" href="pages/facilities.html">Discover All Facilities</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. GUEST REVIEWS -->
+    <section class="section section--white" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">Guest Testimonials</span>
+          <h2 class="section__title" id="reviews-heading">What Our Guests Say</h2>
+          <span class="decor-line" aria-hidden="true"></span>
+        </header>
+
+        <div class="reviews-slider reveal">
+          <div class="reviews-slider__track">
+            <div class="reviews-slider__slides">
+              <article class="reviews-slider__slide">
+                <blockquote class="reviews-slider__quote">
+                  "From the moment we arrived at Aslam's Luxury Hotel, every detail was handled with grace. The
+                  Presidential Suite exceeded every expectation, and dining at The Wild Fork was world-class."
+                </blockquote>
+                <cite class="reviews-slider__author">
+                  Alexander Wright
+                  <span class="reviews-slider__source">London, United Kingdom</span>
+                </cite>
+              </article>
+
+              <article class="reviews-slider__slide">
+                <blockquote class="reviews-slider__quote">
+                  "An oasis of quietude in the city center. The sunset infinity pool view and personalized concierge
+                  recommendations made our wedding anniversary unforgettable."
+                </blockquote>
+                <cite class="reviews-slider__author">
+                  Elena Rostova
+                  <span class="reviews-slider__source">Zurich, Switzerland</span>
+                </cite>
+              </article>
+
+              <article class="reviews-slider__slide">
+                <blockquote class="reviews-slider__quote">
+                  "We hosted our annual executive conference in the LeRoi Ballroom. The acoustic setup, banquet dining,
+                  and flawless staff service set a new standard for corporate events."
+                </blockquote>
+                <cite class="reviews-slider__author">
+                  Marcus Vance
+                  <span class="reviews-slider__source">Managing Director, Global Tech Summit</span>
+                </cite>
+              </article>
+            </div>
+          </div>
+
+          <div class="reviews-slider__nav">
+            <button type="button" class="reviews-slider__arrow reviews-slider__arrow--prev"
+              aria-label="Previous review">
+              &larr;
+            </button>
+            <div class="reviews-slider__dots" role="tablist" aria-label="Review pages"></div>
+            <button type="button" class="reviews-slider__arrow reviews-slider__arrow--next" aria-label="Next review">
+              &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. LOCATION TEASER -->
+    <section class="section section--cream" id="location" aria-labelledby="location-heading">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__eyebrow">Prime Location</span>
+          <h2 class="section__title" id="location-heading">Location &amp; Access</h2>
+          <span class="decor-line" aria-hidden="true"></span>
+        </header>
+
+        <div class="location-teaser">
+          <div class="location-teaser__info reveal">
+            <div class="location-teaser__detail">
+              <h3 class="location-teaser__detail-title">Address</h3>
+              <p class="location-teaser__detail-text">
+                42 Meridian Boulevard, Riverside District<br />
+                Metro City Center 400001
+              </p>
+            </div>
+
+            <div class="location-teaser__detail">
+              <h3 class="location-teaser__detail-title">Contact Concierge</h3>
+              <p class="location-teaser__detail-text">
+                <strong>Phone:</strong> +91 98765 43210<br />
+                <strong>Email:</strong> reservations@aslamsluxuryhotel.com
+              </p>
+            </div>
+
+            <div class="location-teaser__detail">
+              <h3 class="location-teaser__detail-title">Proximity</h3>
+              <p class="location-teaser__detail-text">
+                International Airport: 25 mins &bull; Central Financial Hub: 10 mins &bull; Heritage Museum: 5 mins
+              </p>
+            </div>
+
+            <a class="btn btn--primary" href="pages/location.html">View Detailed Travel &amp; Directions</a>
+          </div>
+
+          <div class="location-teaser__map reveal" data-reveal-delay="100">
+            <div class="location-teaser__pin">
+              <div class="location-teaser__pin-mark" aria-hidden="true">A</div>
+              <h3 class="location-teaser__pin-title">Aslam's Luxury Hotel</h3>
+              <p class="location-teaser__pin-text">Riverside Luxury District</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <a class="site-footer__logo" href="index.html">
+            <span class="site-footer__logo-name">Aslam's Luxury Hotel</span>
+            <span class="site-footer__logo-tag">Luxury Collection</span>
+          </a>
+          <p class="site-footer__desc">
+            An authentic five-star destination where timeless architectural elegance, warm hospitality, and contemporary
+            comfort meet in the heart of the city.
+          </p>
+        </div>
+
+        <div class="site-footer__column">
+          <h3 class="site-footer__column-title">Explore</h3>
+          <ul class="site-footer__links">
+            <li><a class="site-footer__link" href="pages/rooms.html">Rooms</a></li>
+            <li><a class="site-footer__link" href="pages/dining.html">Dining</a></li>
+            <li><a class="site-footer__link" href="pages/banquets.html">Events</a></li>
+            <li><a class="site-footer__link" href="pages/offers.html">Offers</a></li>
+            <li><a class="site-footer__link" href="pages/facilities.html">Facilities</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <h3 class="site-footer__column-title">Quick Links</h3>
+          <ul class="site-footer__links">
+            <li><a class="site-footer__link" href="pages/gallery.html">Gallery</a></li>
+            <li><a class="site-footer__link" href="pages/location.html">Location</a></li>
+            <li><a class="site-footer__link" href="pages/contact.html">Contact</a></li>
+            <li><a class="site-footer__link" href="pages/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <h3 class="site-footer__column-title">Contact</h3>
+          <address class="site-footer__contact">
+            <p class="site-footer__contact-item">
+              42 Meridian Boulevard<br />
+              Riverside District, Metro City 400001
+            </p>
+            <p class="site-footer__contact-item">
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </p>
+            <p class="site-footer__contact-item">
+              <a href="mailto:reservations@aslamsluxuryhotel.com">reservations@aslamsluxuryhotel.com</a>
+            </p>
+          </address>
+          <h3 class="site-footer__column-title site-footer__column-title--spaced">Social</h3>
+          <div class="site-footer__social">
+            <a class="site-footer__social-link" href="#" aria-label="Instagram">IG</a>
+            <a class="site-footer__social-link" href="#" aria-label="Facebook">FB</a>
+            <a class="site-footer__social-link" href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>&copy; <span id="footer-year">2026</span> Aslam's Luxury Hotel. All rights reserved.</p>
+        <nav class="site-footer__legal" aria-label="Legal">
+          <a class="site-footer__legal-link" href="#">Privacy Policy</a>
+          <a class="site-footer__legal-link" href="#">Terms of Use</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOKING CONFIRMATION MODAL -->
+  <div class="modal" id="booking-confirm-modal" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title"
+    aria-hidden="true">
+    <div class="modal__backdrop" tabindex="-1"></div>
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" data-modal-close aria-label="Close dialog">&times;</button>
+      <p class="modal__eyebrow">Stay Preferences Submitted</p>
+      <h2 class="modal__title" id="booking-modal-title">Thank You for Choosing Aslam's Luxury Hotel</h2>
+      <p class="modal__message">
+        Your stay preferences have been successfully recorded. This is a front-end demonstration modal — no active
+        booking transaction was sent.
+      </p>
+      <div class="modal__summary" id="booking-summary"></div>
+      <div class="modal__actions">
+        <button type="button" class="btn btn--primary" data-modal-close>Close</button>
+        <a class="btn btn--outline-dark" href="pages/contact.html">Contact Desk</a>
+      </div>
+      <p class="modal__note">For real reservations, please call or email our booking executive directly.</p>
+    </div>
+  </div>
+
+  <!-- FLOATING ACTION BUTTONS STACK (Icon-only: Book Stay, Concierge, Back to Top) -->
+  <div class="floating-btn-stack" id="floating-btn-stack">
+    <button type="button" class="floating-btn" data-modal-open="booking-confirm-modal" aria-label="Book Stay"
+      title="Book Stay">
+      <i class="bx bx-calendar-check" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="floating-btn concierge-toggle" aria-label="Virtual Concierge"
+      title="Virtual Concierge">
+      <i class="bx bx-support" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="floating-btn back-to-top" id="back-to-top" aria-label="Back to Top"
+      title="Back to Top">
+      <i class="bx bx-chevron-up" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <!-- CONCIERGE CHAT PANEL -->
+  <div class="concierge-panel" id="concierge-panel" aria-hidden="true" role="dialog" aria-label="Concierge Chat Panel">
+    <div class="concierge-panel__header">
+      <div>
+        <span class="concierge-panel__title">Aslam's Virtual Host</span>
+        <span class="concierge-panel__subtitle">24/7 Bespoke Guest Concierge</span>
+      </div>
+      <button type="button" class="concierge-panel__close" aria-label="Close Concierge Panel">&times;</button>
+    </div>
+
+    <div class="concierge-panel__body">
+      <div class="concierge-msg concierge-msg--bot">
+        <div class="concierge-msg__bubble">
+          Welcome to <strong>Aslam's Luxury Hotel</strong>. How may I assist your stay today? Select a topic or type
+          your question below.
+          <div class="concierge-chips">
+            <button type="button" class="concierge-chip" data-query="rooms">Rooms</button>
+            <button type="button" class="concierge-chip" data-query="dining">Dining</button>
+            <button type="button" class="concierge-chip" data-query="events">Events</button>
+            <button type="button" class="concierge-chip" data-query="spa">Spa</button>
+            <button type="button" class="concierge-chip" data-query="location">Location</button>
+            <button type="button" class="concierge-chip" data-query="contact">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="concierge-panel__form">
+      <input type="text" class="concierge-panel__input" placeholder="Type a message or question..."
+        aria-label="Type message to concierge" required />
+      <button type="submit" class="btn btn--primary btn--compact" aria-label="Send message">Send</button>
+    </form>
+  </div>
+
+  <script src="js/header.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/concierge.js"></script>
+</body>
+
+</html>

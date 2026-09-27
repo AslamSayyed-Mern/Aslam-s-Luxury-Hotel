@@ -1,0 +1,65 @@
+:root {
+  --gold: #9b7a4a;
+  --gold-dark: #765a32;
+  --gold-light: #c4a574;
+
+  --charcoal: #181614;
+  --charcoal-soft: #25211d;
+  --charcoal-muted: #3d3832;
+
+  --cream: #f7f3ed;
+  --beige: #e9dfd1;
+  --beige-dark: #d4c8b8;
+
+  --white: #ffffff;
+
+  --text: #302d29;
+  --text-light: #77716a;
+  --text-on-dark: rgba(255, 255, 255, 0.92);
+  --text-on-dark-muted: rgba(255, 255, 255, 0.65);
+
+  --border: #ddd5ca;
+  --border-dark: rgba(255, 255, 255, 0.12);
+
+  /* Layout & Section Spacing Tokens */
+  --container: 1280px;
+  --space-section-to-section: clamp(64px, 7vw, 100px);
+  --section-padding: var(--space-section-to-section);
+  --section-padding-sm: 64px;
+
+  /* Header & Page Hero Height Tokens */
+  --header-height: 88px;
+  --header-height-scrolled: 72px;
+  --page-hero-min-height: 75vh;
+  --page-hero-min-height-mobile: 60vh;
+
+  /* Transitions */
+  --transition: 0.4s ease;
+  --transition-fast: 0.25s ease;
+
+  /* Typography Fonts */
+  --font-serif: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  --font-sans: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Fluid Typography Clamp Tokens */
+  --font-size-h1: clamp(2.5rem, 5.5vw, 4.25rem);
+  --font-size-h2: clamp(2rem, 4.2vw, 3.25rem);
+  --font-size-h3: clamp(1.4rem, 2.8vw, 2.25rem);
+  --font-size-h4: clamp(1.2rem, 2.2vw, 1.75rem);
+  --font-size-h5: clamp(1.05rem, 1.8vw, 1.4rem);
+  --font-size-h6: clamp(0.95rem, 1.4vw, 1.15rem);
+  --font-size-body: clamp(0.875rem, 1.1vw, 0.9375rem);
+  --font-size-body-lg: clamp(0.95rem, 1.25vw, 1.0625rem);
+
+  /* Element Spacing Clamp Tokens */
+  --space-header-to-para: clamp(12px, 2.2vw, 20px);
+  --space-para-to-para: clamp(16px, 2.8vw, 24px);
+
+  /* Shadows & Z-Index Layers */
+  --shadow-soft: 0 12px 40px rgba(24, 22, 20, 0.08);
+  --shadow-header: 0 4px 24px rgba(24, 22, 20, 0.15);
+
+  --z-header: 1000;
+  --z-mobile-menu: 1100;
+  --z-overlay: 1050;
+}

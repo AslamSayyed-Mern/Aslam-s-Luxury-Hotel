@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="L'Amande French Patisserie & Tea Salon at Aslam's Luxury Hotel. Handcrafted French macarons, artisanal pastries, and bespoke afternoon tea service."
+    />
+    <title>L'Amande French Patisserie &amp; Tea Salon | Aslam's Luxury Hotel</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/sections.css" />
+    <link rel="stylesheet" href="../css/cards.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header site-header--transparent" id="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a class="site-header__logo" href="../index.html" aria-label="Aslam's Luxury Hotel — Home">
+          <span class="site-header__logo-name">Aslam's</span>
+          <span class="site-header__logo-tag">Luxury Hotel</span>
+        </a>
+
+        <nav class="site-header__nav" aria-label="Primary navigation">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item site-header__nav-item--has-dropdown">
+              <a class="site-header__nav-link" href="rooms.html">Rooms</a>
+              <ul class="site-header__dropdown" aria-label="Room types">
+                <li><a class="site-header__dropdown-link" href="executive-room.html">Executive Room</a></li>
+                <li><a class="site-header__dropdown-link" href="club-room.html">Club Room</a></li>
+                <li><a class="site-header__dropdown-link" href="executive-suite.html">Executive Suite</a></li>
+                <li><a class="site-header__dropdown-link" href="presidential-suite.html">Presidential Suite</a></li>
+              </ul>
+            </li>
+            <li class="site-header__nav-item site-header__nav-item--has-dropdown">
+              <a class="site-header__nav-link site-header__nav-link--active" href="dining.html">Dining</a>
+              <ul class="site-header__dropdown" aria-label="Restaurants">
+                <li><a class="site-header__dropdown-link" href="wild-fork.html">The Wild Fork</a></li>
+                <li><a class="site-header__dropdown-link" href="via-milano.html">Via Milano</a></li>
+                <li><a class="site-header__dropdown-link" href="celestial-lounge.html">Celestial Lounge</a></li>
+                <li><a class="site-header__dropdown-link" href="l-amande.html">L'Amande Patisserie</a></li>
+                <li><a class="site-header__dropdown-link" href="saffron-bistro.html">Saffron Fine Dining</a></li>
+              </ul>
+            </li>
+            <li class="site-header__nav-item site-header__nav-item--has-dropdown">
+              <a class="site-header__nav-link" href="banquets.html">Banquets</a>
+              <ul class="site-header__dropdown" aria-label="Event venues">
+                <li><a class="site-header__dropdown-link" href="leroi.html">LeRoi</a></li>
+                <li><a class="site-header__dropdown-link" href="colosseum.html">Colosseum</a></li>
+                <li><a class="site-header__dropdown-link" href="sky-marvella.html">Sky Marvella</a></li>
+                <li><a class="site-header__dropdown-link" href="aurum.html">Aurum</a></li>
+                <li><a class="site-header__dropdown-link" href="vista.html">Vista</a></li>
+                <li><a class="site-header__dropdown-link" href="boardroom.html">Boardroom</a></li>
+              </ul>
+            </li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="offers.html">Offers</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="facilities.html">Facilities</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="gallery.html">Gallery</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="location.html">Location</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="contact.html">Contact</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <button type="button" class="btn btn--primary btn--header" id="header-book-btn" aria-label="Book your stay" data-modal-open="booking-confirm-modal">
+            Book Now
+          </button>
+        </div>
+
+        <button type="button" class="site-header__menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="site-header__menu-bar"></span>
+          <span class="site-header__menu-bar"></span>
+          <span class="site-header__menu-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <div class="mobile-menu__backdrop" tabindex="-1"></div>
+      <div class="mobile-menu__panel">
+        <div class="mobile-menu__header">
+          <a class="site-header__logo" href="../index.html">
+            <span class="site-header__logo-name">Aslam's Luxury Hotel</span>
+          </a>
+          <button type="button" class="mobile-menu__close" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="mobile-menu__nav" aria-label="Mobile primary navigation">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item--has-sub">
+              <div class="mobile-menu__link-group">
+                <a class="mobile-menu__link" href="rooms.html">Rooms</a>
+                <button type="button" class="mobile-menu__sub-toggle" aria-label="Toggle Rooms sub-menu"><i class="bx bx-chevron-down"></i></button>
+              </div>
+              <ul class="mobile-menu__sublist">
+                <li><a class="mobile-menu__sublink" href="executive-room.html">Executive Room</a></li>
+                <li><a class="mobile-menu__sublink" href="club-room.html">Club Room</a></li>
+                <li><a class="mobile-menu__sublink" href="executive-suite.html">Executive Suite</a></li>
+                <li><a class="mobile-menu__sublink" href="presidential-suite.html">Presidential Suite</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item--has-sub">
+              <div class="mobile-menu__link-group">
+                <a class="mobile-menu__link" href="dining.html">Dining</a>
+                <button type="button" class="mobile-menu__sub-toggle" aria-label="Toggle Dining sub-menu"><i class="bx bx-chevron-down"></i></button>
+              </div>
+              <ul class="mobile-menu__sublist">
+                <li><a class="mobile-menu__sublink" href="wild-fork.html">The Wild Fork</a></li>
+                <li><a class="mobile-menu__sublink" href="via-milano.html">Via Milano</a></li>
+                <li><a class="mobile-menu__sublink" href="celestial-lounge.html">Celestial Lounge</a></li>
+                <li><a class="mobile-menu__sublink" href="l-amande.html">L'Amande Patisserie</a></li>
+                <li><a class="mobile-menu__sublink" href="saffron-bistro.html">Saffron Fine Dining</a></li>
+              </ul>
+            </li>
+            <li><a class="mobile-menu__link" href="offers.html">Offers</a></li>
+            <li><a class="mobile-menu__link" href="facilities.html">Facilities</a></li>
+            <li><a class="mobile-menu__link" href="gallery.html">Gallery</a></li>
+            <li><a class="mobile-menu__link" href="location.html">Location</a></li>
+            <li><a class="mobile-menu__link" href="contact.html">Contact</a></li>
+            <li><a class="mobile-menu__link" href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <!-- HERO -->
+      <section class="page-hero page-hero--bottom" style="background-image: linear-gradient(rgba(24, 22, 20, 0.5), rgba(24, 22, 20, 0.7)), url('../assets/images/dining/l-amande.jpg');">
+        <div class="container">
+          <span class="section__eyebrow" style="color: var(--gold-light);">Parisian Artistry &amp; High Tea</span>
+          <h1 class="section__title" style="color: var(--white);">L'Amande Patisserie &amp; Tea Salon</h1>
+          <p class="section__intro" style="color: rgba(255, 255, 255, 0.9);">
+            Handcrafted French Macarons &bull; Artisanal Viennoiserie &bull; Royal Afternoon Tea
+          </p>
+        </div>
+      </section>
+
+      <!-- BREADCRUMB BAR -->
+      <div class="page-breadcrumb-bar">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a><i class="bx bx-chevron-right"></i><a href="dining.html">Dining</a><i class="bx bx-chevron-right"></i><span>L'Amande Patisserie</span>
+        </nav>
+      </div>
+
+      <!-- INFO BAR -->
+      <section class="section section--white" style="padding-block: 40px; border-bottom: 1px solid var(--border);">
+        <div class="container">
+          <div class="stats-grid" style="gap: 20px;">
+            <div>
+              <span class="stat-item__label">Cuisine</span>
+              <strong style="display: block; font-family: var(--font-serif); font-size: 1.5rem; color: var(--charcoal);">French Bakery &amp; Tea</strong>
+            </div>
+            <div>
+              <span class="stat-item__label">Hours</span>
+              <strong style="display: block; font-family: var(--font-serif); font-size: 1.5rem; color: var(--charcoal);">08:00 AM – 09:00 PM</strong>
+            </div>
+            <div>
+              <span class="stat-item__label">High Tea</span>
+              <strong style="display: block; font-family: var(--font-serif); font-size: 1.5rem; color: var(--charcoal);">02:00 PM – 06:00 PM</strong>
+            </div>
+            <div>
+              <span class="stat-item__label">Reservations</span>
+              <strong style="display: block; font-family: var(--font-serif); font-size: 1.5rem; color: var(--charcoal);">+91 98765 43210</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE 1 (LEFT IMAGE / RIGHT TEXT) -->
+      <section class="section section--cream">
+        <div class="container">
+          <div class="story-block">
+            <div class="story-block__media image-reveal">
+              <img src="../assets/images/dining/l-amande.jpg" alt="L'Amande French Pastry Display" loading="lazy" width="700" height="500" />
+            </div>
+            <div class="story-block__content reveal">
+              <span class="section__eyebrow">French Craftsmanship</span>
+              <h2 class="section__title">Elegant Pastries &amp; Royal Afternoon Tea</h2>
+              <p class="story-block__text">
+                Step into <strong>L'Amande</strong>, a Parisian-inspired tea salon featuring marble countertops, gold leaf mirrors, and freshly baked viennoiseries. Every morning, Master Pastry Chefs craft delicate éclairs, fruit tarts, and buttery croissants using imported French AOP butter.
+              </p>
+              <p class="story-block__text">
+                Indulge in our famous Royal Afternoon Tea experience, featuring silver tiered trays of finger sandwiches, warm scones, and single-estate loose leaf teas.
+              </p>
+              <button type="button" class="btn btn--primary" data-modal-open="booking-confirm-modal">
+                Reserve Afternoon Tea at L'Amande
+              </button>
+            </div>
+          </div>
+
+          <!-- FEATURE 2 (RIGHT IMAGE / LEFT TEXT) -->
+          <div class="story-block story-block--reverse" style="margin-top: 80px;">
+            <div class="story-block__media image-reveal">
+              <img src="../assets/images/dining/via-milano.jpg" alt="Handcrafted Macarons & Artisanal Chocolate" loading="lazy" width="700" height="500" />
+            </div>
+            <div class="story-block__content reveal">
+              <span class="section__eyebrow">Confectionery Secrets</span>
+              <h2 class="section__title">Handcrafted Macarons &amp; Valrhona Chocolates</h2>
+              <p class="story-block__text">
+                Discover our signature macaron gallery with seasonal flavors such as Salted Caramel Butter, Rose &amp; Raspberry, and Sicilian Pistachio. Each confection is presented in luxury velvet gift boxes perfect for souvenirs and celebrations.
+              </p>
+              <ul class="feature-block__list">
+                <li class="feature-block__item"><i class="bx bx-check-circle"></i> 16 Signature Macaron Flavors Made Daily</li>
+                <li class="feature-block__item"><i class="bx bx-check-circle"></i> Valrhona Single-Origin Chocolate Pralines</li>
+                <li class="feature-block__item"><i class="bx bx-check-circle"></i> Custom Celebration Cake Orders</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- HIGHLIGHT MENU -->
+          <div style="margin-top: 80px;">
+            <header class="section__header section__header--center reveal">
+              <span class="section__eyebrow">Sweet Temptations</span>
+              <h2 class="section__title">Patisserie Highlights</h2>
+              <span class="decor-line" aria-hidden="true"></span>
+            </header>
+
+            <div class="card-grid card-grid--3">
+              <div class="venue-card">
+                <div class="venue-card__body">
+                  <h3 class="venue-card__title">Royal Afternoon Tea Tier</h3>
+                  <div class="venue-card__meta">Finger Sandwiches &bull; Scones &bull; Clotted Cream</div>
+                  <p class="venue-card__desc">A luxurious 3-tier presentation with cucumber dill sandwiches, warm butter scones, strawberry preserve, and petite gateaux.</p>
+                </div>
+              </div>
+
+              <div class="venue-card">
+                <div class="venue-card__body">
+                  <h3 class="venue-card__title">Opera Gateau</h3>
+                  <div class="venue-card__meta">Almond Sponge &bull; Coffee Buttercream &bull; Dark Ganache</div>
+                  <p class="venue-card__desc">Classic French opera cake with delicate layers of espresso-soaked Jaconde sponge and dark chocolate glaze.</p>
+                </div>
+              </div>
+
+              <div class="venue-card">
+                <div class="venue-card__body">
+                  <h3 class="venue-card__title">Tahitian Vanilla Mille-Feuille</h3>
+                  <div class="venue-card__meta">Puff Pastry &bull; Tahitian Vanilla Bean Diplomat</div>
+                  <p class="venue-card__desc">Caramelized puff pastry layers filled with silky Tahitian vanilla bean cream and dusting of powdered sugar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- SISTER VENUES -->
+      <section class="section section--beige">
+        <div class="container">
+          <header class="section__header section__header--center reveal is-visible">
+            <span class="section__eyebrow">Explore Other Concepts</span>
+            <h2 class="section__title">Our Sister Venues</h2>
+            <span class="decor-line" aria-hidden="true"></span>
+          </header>
+
+          <div class="card-grid card-grid--4">
+            <article class="room-card reveal is-visible">
+              <div class="room-card__media">
+                <img src="../assets/images/dining/wild-fork.jpg" alt="The Wild Fork" loading="lazy" width="600" height="450" />
+              </div>
+              <div class="room-card__body">
+                <h3 class="room-card__name">The Wild Fork</h3>
+                <div class="room-card__meta"><span>International Fine Dining</span> &bull; <span>Wood-Fired</span></div>
+                <p class="room-card__desc">Wood-fired dry-aged steaks, sustainable seafood, and global fusion mixology.</p>
+                <a class="card-link" href="wild-fork.html">Explore The Wild Fork &rarr;</a>
+              </div>
+            </article>
+
+            <article class="room-card reveal is-visible">
+              <div class="room-card__media">
+                <img src="../assets/images/dining/via-milano.jpg" alt="Via Milano" loading="lazy" width="600" height="450" />
+              </div>
+              <div class="room-card__body">
+                <h3 class="room-card__name">Via Milano</h3>
+                <div class="room-card__meta"><span>Authentic Italian</span> &bull; <span>Wine Cellar</span></div>
+                <p class="room-card__desc">Handcrafted pasta, wood-fired Neapolitan pizza, and rare vintages in a warm rustic setting.</p>
+                <a class="card-link" href="via-milano.html">Explore Via Milano &rarr;</a>
+              </div>
+            </article>
+
+            <article class="room-card reveal is-visible">
+              <div class="room-card__media">
+                <img src="../assets/images/dining/celestial-lounge.jpg" alt="Celestial Lounge" loading="lazy" width="600" height="450" />
+              </div>
+              <div class="room-card__body">
+                <h3 class="room-card__name">Celestial Lounge</h3>
+                <div class="room-card__meta"><span>Rooftop & Mixology</span> &bull; <span>Skyline Views</span></div>
+                <p class="room-card__desc">Open-air rooftop cocktail lounge featuring artisanal mixology, tapas, and city lights.</p>
+                <a class="card-link" href="celestial-lounge.html">Explore Celestial Lounge &rarr;</a>
+              </div>
+            </article>
+
+            <article class="room-card reveal is-visible">
+              <div class="room-card__media">
+                <img src="../assets/images/dining/saffron-bistro.jpg" alt="Saffron Fine Dining" loading="lazy" width="600" height="450" />
+              </div>
+              <div class="room-card__body">
+                <h3 class="room-card__name">Saffron Fine Dining</h3>
+                <div class="room-card__meta"><span>Royal Indian Cuisine</span> &bull; <span>Heritage Recipes</span></div>
+                <p class="room-card__desc">Awadhi dum biryanis, rich Mughlai curries, and clay-oven tandoori delicacies in opulent decor.</p>
+                <a class="card-link" href="saffron-bistro.html">Explore Saffron &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container site-footer__inner">
+        <div class="site-footer__brand">
+          <a class="site-header__logo" href="../index.html">
+            <span class="site-header__logo-name">Aslam's</span>
+            <span class="site-header__logo-tag">Luxury Hotel</span>
+          </a>
+          <p class="site-footer__desc">
+            A sanctuary of five-star elegance and bespoke hospitality in the heart of the city.
+          </p>
+        </div>
+        <div class="site-footer__col">
+          <h3 class="site-footer__col-title">Navigation</h3>
+          <ul class="site-footer__links">
+            <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="banquets.html">Banquets &amp; Events</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h3 class="site-footer__col-title">Venues</h3>
+          <ul class="site-footer__links">
+            <li><a href="wild-fork.html">The Wild Fork</a></li>
+            <li><a href="via-milano.html">Via Milano</a></li>
+            <li><a href="celestial-lounge.html">Celestial Lounge</a></li>
+            <li><a href="l-amande.html">L'Amande Patisserie</a></li>
+            <li><a href="saffron-bistro.html">Saffron Fine Dining</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h3 class="site-footer__col-title">Contact</h3>
+          <p class="site-footer__text">42 Meridian Boulevard<br />Riverside District</p>
+          <p class="site-footer__text">+91 98765 43210</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p>&copy; 2026 Aslam's Luxury Hotel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/concierge.js"></script>
+    <script src="../js/animations.js"></script>
+  </body>
+</html>
