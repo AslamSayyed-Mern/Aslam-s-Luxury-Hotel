@@ -1,25 +1,28 @@
 :root {
-  --gold: #9b7a4a;
-  --gold-dark: #765a32;
-  --gold-light: #c4a574;
+  /* IMPERIAL NAVY & ROSE BRONZE LUXURY THEME (ST. REGIS / BVLGARI VIBE) */
+  --gold: #c89d7c;
+  --gold-dark: #a87958;
+  --gold-light: #e2b99a;
+  --gold-rgb: 200, 157, 124;
 
-  --charcoal: #181614;
-  --charcoal-soft: #25211d;
-  --charcoal-muted: #3d3832;
+  --charcoal: #0a1128;
+  --charcoal-soft: #121b36;
+  --charcoal-muted: #1e2a4a;
+  --charcoal-card: #15203e;
 
-  --cream: #f7f3ed;
-  --beige: #e9dfd1;
-  --beige-dark: #d4c8b8;
+  --cream: #f7f4f0;
+  --beige: #ece5dc;
+  --beige-dark: #d8cdbf;
 
   --white: #ffffff;
 
-  --text: #302d29;
-  --text-light: #77716a;
-  --text-on-dark: rgba(255, 255, 255, 0.92);
-  --text-on-dark-muted: rgba(255, 255, 255, 0.65);
+  --text: #1a2238;
+  --text-light: #5a647d;
+  --text-on-dark: rgba(255, 255, 255, 0.95);
+  --text-on-dark-muted: rgba(255, 255, 255, 0.7);
 
-  --border: #ddd5ca;
-  --border-dark: rgba(255, 255, 255, 0.12);
+  --border: #e2d7c9;
+  --border-dark: rgba(200, 157, 124, 0.22);
 
   /* Layout & Section Spacing Tokens */
   --container: 1280px;
@@ -56,8 +59,8 @@
   --space-para-to-para: clamp(16px, 2.8vw, 24px);
 
   /* Shadows & Z-Index Layers */
-  --shadow-soft: 0 12px 40px rgba(24, 22, 20, 0.08);
-  --shadow-header: 0 4px 24px rgba(24, 22, 20, 0.15);
+  --shadow-soft: 0 12px 40px rgba(10, 17, 40, 0.12);
+  --shadow-header: 0 4px 24px rgba(10, 17, 40, 0.25);
 
   --z-header: 1000;
   --z-mobile-menu: 1100;

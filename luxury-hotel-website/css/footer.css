@@ -31,6 +31,15 @@
   margin-bottom: 20px;
 }
 
+.site-footer__logo-img {
+  height: 72px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 16px;
+}
+
 .site-footer__logo-name {
   font-family: var(--font-serif);
   font-size: 1.75rem;

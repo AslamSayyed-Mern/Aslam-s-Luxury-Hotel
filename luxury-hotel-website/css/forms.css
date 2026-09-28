@@ -22,7 +22,7 @@ body.modal-open {
 .modal__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(24, 22, 20, 0.72);
+  background: rgba(10, 17, 40, 0.75);
   opacity: 0;
   transition: opacity var(--transition);
 }
