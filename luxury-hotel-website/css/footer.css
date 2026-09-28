@@ -10,14 +10,19 @@
 
 .site-footer__top {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 48px;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px 20px;
   padding-bottom: 64px;
   border-bottom: 1px solid var(--border-dark);
 }
 
 .site-footer__brand {
+  grid-column: 1 / -1;
   max-width: 320px;
+}
+
+.site-footer__column:last-child {
+  grid-column: 1 / -1;
 }
 
 .site-footer__logo {
@@ -102,9 +107,7 @@
   width: 40px;
   height: 40px;
   border: 1px solid var(--border-dark);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-size: 18px;
   color: var(--white);
   transition:
     border-color var(--transition-fast),
@@ -146,6 +149,14 @@
   .site-footer__top {
     grid-template-columns: 1.2fr repeat(3, 1fr);
     gap: 40px;
+  }
+
+  .site-footer__brand {
+    grid-column: auto;
+  }
+
+  .site-footer__column:last-child {
+    grid-column: auto;
   }
 
   .site-footer__bottom {

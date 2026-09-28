@@ -73,7 +73,7 @@
     }
 
     if (q.indexOf("location") !== -1 || q.indexOf("address") !== -1 || q.indexOf("airport") !== -1 || q.indexOf("where") !== -1) {
-      return "We are located at <strong>42 Meridian Boulevard, Riverside District</strong>. We are 25 minutes from the International Airport and 10 minutes from the Financial Hub.";
+      return "We are located at <strong>Medchal-Malkajgiri district, Hyderabad, Telangana 501401</strong>. We are 25 minutes from Rajiv Gandhi International Airport (HYD).";
     }
 
     if (q.indexOf("contact") !== -1 || q.indexOf("phone") !== -1 || q.indexOf("email") !== -1 || q.indexOf("call") !== -1) {

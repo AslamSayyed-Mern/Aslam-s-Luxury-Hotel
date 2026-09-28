@@ -217,6 +217,8 @@
 }
 
 .venue-card {
+  display: flex;
+  flex-direction: column;
   background: var(--white);
   border: 1px solid var(--border);
   overflow: hidden;
@@ -245,6 +247,9 @@
 
 .venue-card__body {
   padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .venue-card__title {
@@ -266,9 +271,12 @@
   line-height: 1.7;
   color: var(--text-light);
   margin-bottom: 16px;
+  flex: 1;
 }
 
 .offer-card {
+  display: flex;
+  flex-direction: column;
   background: var(--white);
   border: 1px solid var(--border);
   overflow: hidden;
@@ -292,6 +300,9 @@
 
 .offer-card__body {
   padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .offer-card__category {
@@ -314,6 +325,13 @@
   line-height: 1.7;
   color: var(--text-light);
   margin-bottom: 20px;
+  flex: 1;
+}
+
+.room-card__actions,
+.venue-card .card-link,
+.offer-card .card-link {
+  margin-top: auto;
 }
 
 .facility-pill {
@@ -449,4 +467,134 @@
   .card-grid--banquets {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .insta-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* INSTAGRAM SOCIAL WALL CARDS (LIGHT LUXURY CREAM THEME) */
+.insta-wall {
+  background-color: var(--cream);
+  border-top: 1px solid var(--border);
+}
+
+.insta-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--border);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  overflow: hidden;
+}
+
+.insta-card:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-4px);
+}
+
+.insta-card__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.insta-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.insta-card:hover .insta-card__img {
+  transform: scale(1.06);
+}
+
+.insta-card__badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: rgba(18, 18, 18, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: var(--gold-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.insta-card:hover .insta-card__badge {
+  background: var(--gold);
+  color: var(--white);
+}
+
+.insta-card__body {
+  padding: 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.insta-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.insta-card__handle {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--gold-dark);
+  text-transform: uppercase;
+}
+
+.insta-card__stats {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.insta-card__stats i {
+  color: var(--gold);
+  margin-right: 3px;
+}
+
+.insta-card__caption {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.insta-card__footer {
+  margin-top: auto;
+}
+
+.insta-card__tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  background: var(--cream);
+  border: 1px solid var(--border);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.insta-card:hover .insta-card__tag {
+  border-color: var(--gold);
+  color: var(--gold-dark);
 }
